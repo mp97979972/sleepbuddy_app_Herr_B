@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/countDownBox"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/rounded_rect_background_info_10"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/waitForConnectionTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/establishing_connection"
+        android:textColor="?primaryTextColor"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/countdownTxtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/countdownTxtView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/drop_shadow_gradient_button"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="?buttonTextColor"
+        android:textSize="65dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/waitForConnectionTxtView"
+        app:layout_constraintStart_toStartOf="@id/waitForConnectionTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/waitForConnectionTxtView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sundeepk:compact-calendar-view:3.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6017d1fdb5576948e2e5648323055947/transformed/jetified-compact-calendar-view-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6017d1fdb5576948e2e5648323055947/transformed/jetified-compact-calendar-view-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6017d1fdb5576948e2e5648323055947/transformed/jetified-compact-calendar-view-3.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ea6f0498151cb7d6b6f5c890f0129cfa/transformed/jetified-compact-calendar-view-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ea6f0498151cb7d6b6f5c890f0129cfa/transformed/jetified-compact-calendar-view-3.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ea6f0498151cb7d6b6f5c890f0129cfa/transformed/jetified-compact-calendar-view-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6d06754db5df78a2b64e9bae5d50d3e1/transformed/jetified-compact-calendar-view-3.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6d06754db5df78a2b64e9bae5d50d3e1/transformed/jetified-compact-calendar-view-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6d06754db5df78a2b64e9bae5d50d3e1/transformed/jetified-compact-calendar-view-3.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/928b43a2ab77b323fb9be025d0850e1f/transformed/jetified-compact-calendar-view-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/928b43a2ab77b323fb9be025d0850e1f/transformed/jetified-compact-calendar-view-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/928b43a2ab77b323fb9be025d0850e1f/transformed/jetified-compact-calendar-view-3.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0775cba3e81c3eb7248be62a521d453e/transformed/jetified-compact-calendar-view-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0775cba3e81c3eb7248be62a521d453e/transformed/jetified-compact-calendar-view-3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0775cba3e81c3eb7248be62a521d453e/transformed/jetified-compact-calendar-view-3.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8a0b5ff21084d643d3618a82e2f74974/transformed/jetified-compact-calendar-view-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8a0b5ff21084d643d3618a82e2f74974/transformed/jetified-compact-calendar-view-3.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8a0b5ff21084d643d3618a82e2f74974/transformed/jetified-compact-calendar-view-3.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sundeepk/compact-calendar-view/3.0.0/963be839e89b22a9df7007fd1705f1f8690eeb3d/compact-calendar-view-3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sundeepk/compact-calendar-view/3.0.0/94d71e07e14a07564eeedfb045214968ac848d9c/compact-calendar-view-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/checkSensorAndLiveMeasurementLayoutSleepBuddy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:visibility="gone"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/checkSensorStartBoxSleepBuddy"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_rect_background_info_10"
+        app:layout_constraintBottom_toTopOf="@id/liveMeasurementInfoBoxSleepBuddy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnCheckSensorStartSleepBuddy"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/drop_shadow_gradient_button"
+            android:text="@string/check_sensor"
+            android:textAllCaps="false"
+            android:textColor="?buttonTextColor"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imgConfirmStatusSensorSleepBuddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/check_sensor_check"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/btnCheckSensorStartSleepBuddy"
+            app:layout_constraintStart_toStartOf="@id/btnCheckSensorStartSleepBuddy"
+            app:layout_constraintTop_toBottomOf="@id/btnCheckSensorStartSleepBuddy" />
+
+        <TextView
+            android:id="@+id/txtConfirmStatusSensorSleepBuddy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="?primaryTextColor"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@id/imgConfirmStatusSensorSleepBuddy"
+            app:layout_constraintStart_toStartOf="@id/imgConfirmStatusSensorSleepBuddy"
+            app:layout_constraintTop_toBottomOf="@id/imgConfirmStatusSensorSleepBuddy" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/liveMeasurementInfoBoxSleepBuddy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_rect_background_info_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/checkSensorStartBoxSleepBuddy"
+        app:layout_constraintStart_toStartOf="@id/checkSensorStartBoxSleepBuddy"
+        app:layout_constraintTop_toBottomOf="@id/checkSensorStartBoxSleepBuddy"
+        android:layout_marginTop="10dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/simpleChronometerPlotData"
+            app:layout_constraintBottom_toTopOf="@id/multiWaveHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/liveDataScrollViewSleepBuddy">
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:id="@+id/liveDataLayoutSleepBuddy"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/simpleChronometerPlotData"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/multiWaveHeader"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:visibility="gone"-->
+<!--                >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/rrImgViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/lung_symbol"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    android:layout_marginBottom="3dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rrTxtViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/rr"-->
+<!--                    android:textColor="?attr/secondaryTextColor"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/snoreTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/snoreTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/rrImgViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/rrImgViewSleepBuddy"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rrValueTextViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/empty_placeholder"-->
+<!--                    android:textColor="?primaryTextColor"-->
+<!--                    android:textSize="22dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/rrTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/rrTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/rrTxtViewSleepBuddy" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/snoreImgViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    android:src="@drawable/snore_symbol"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/sleepPositionImgViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/rrImgViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/snoreTxtViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/snoring"-->
+<!--                    android:textColor="?attr/secondaryTextColor"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/snoreImgViewSleepBuddy" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/snoreValueTextViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/empty_placeholder"-->
+<!--                    android:textColor="?primaryTextColor"-->
+<!--                    android:textSize="22dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/snoreTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/snoreTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/snoreTxtViewSleepBuddy" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/sleepPositionImgViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/sleep_position_symbol"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/snoreImgViewSleepBuddy"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/snoreImgViewSleepBuddy"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/sleepPositionTxtViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/position"-->
+<!--                    android:textColor="?attr/secondaryTextColor"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/sleepPositionImgViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/sleepPositionImgViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/sleepPositionImgViewSleepBuddy" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/sleepPositionValueTextViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/empty_placeholder"-->
+<!--                    android:textColor="?primaryTextColor"-->
+<!--                    android:textSize="22dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/sleepPositionTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/sleepPositionTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/sleepPositionTxtViewSleepBuddy" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/bpmOverviewImgMonthGeneralViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/heart_symbol"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/snoreValueTextViewSleepBuddy"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/hrvImgViewSleepBuddy"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/bpmTxtViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/bpm"-->
+<!--                    android:textColor="?attr/secondaryTextColor"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/bpmOverviewImgMonthGeneralViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/bpmOverviewImgMonthGeneralViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/bpmOverviewImgMonthGeneralViewSleepBuddy" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/bpmValueTextViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/empty_placeholder"-->
+<!--                    android:textSize="22dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/bpmTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/bpmTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/bpmTxtViewSleepBuddy" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/hrvImgViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/hrv_symbol"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/bpmOverviewImgMonthGeneralViewSleepBuddy"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@id/bpmOverviewImgMonthGeneralViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/bpmOverviewImgMonthGeneralViewSleepBuddy" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hrvTxtViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="7dp"-->
+<!--                    android:text="@string/hrv"-->
+<!--                    android:textColor="?attr/secondaryTextColor"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/bpmTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/hrvImgViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/hrvImgViewSleepBuddy" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hrvValueTextViewSleepBuddy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/empty_placeholder"-->
+<!--                    android:textColor="?primaryTextColor"-->
+<!--                    android:textSize="22dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/hrvTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/hrvTxtViewSleepBuddy"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/hrvTxtViewSleepBuddy" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/liveDataLayoutSleepBuddy"
+                app:layout_constraintTop_toBottomOf="@id/simpleChronometerPlotData"
+                app:layout_constraintBottom_toTopOf="@id/multiWaveHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/subFeature1TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Ecg RR"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/subFeature2TxtView"
+                    app:layout_constraintEnd_toStartOf="@id/subFeature2TxtView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/subFeature2TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature1ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature1TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature1TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature1TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature2TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Ecg RMS"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/subFeature3TxtView"
+                    app:layout_constraintStart_toEndOf="@id/subFeature1TxtView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/subFeature2ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature2TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature2TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature2TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature3TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emg RMS"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/subFeature2TxtView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/subFeature2TxtView"
+                    app:layout_constraintTop_toTopOf="@id/subFeature2TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature3ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature3TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature3TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature3TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature4TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ACC X"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature1TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature1TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature1ValueTxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature4ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature4TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature4TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature4TxtView" />
+
+
+                <TextView
+                    android:id="@+id/subFeature5TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ACC Y"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature2TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature2TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature2ValueTxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature5ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature5TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature5TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature5TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature6TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ACC Z"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature3TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature3TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature3ValueTxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature6ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature6TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature6TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature6TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature7TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Snore RMS"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature4TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature4TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature4ValueTxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature7ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature7TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature7TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature7TxtView" />
+
+
+                <TextView
+                    android:id="@+id/subFeature8TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Move1 RMS"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature5TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature5TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature5ValueTxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature8ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature8TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature8TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature8TxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature9TxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Move2 RMS"
+                    android:textColor="?attr/secondaryTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature6TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature6TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature6ValueTxtView" />
+
+                <TextView
+                    android:id="@+id/subFeature9ValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_placeholder"
+                    android:textColor="?primaryTextColor"
+                    android:textSize="22dp"
+                    app:layout_constraintEnd_toEndOf="@id/subFeature9TxtView"
+                    app:layout_constraintStart_toStartOf="@id/subFeature9TxtView"
+                    app:layout_constraintTop_toBottomOf="@id/subFeature9TxtView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/multiWaveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleY="-1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:mwhCloseColor="?overviewEndGradientColor"
+            app:mwhStartColor="?overviewStartGradientColor"
+            app:mwhVelocity="0" />
+
+
+        <Chronometer
+            android:id="@+id/simpleChronometerPlotData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/simpleChronometerPlotData"
+            app:layout_constraintEnd_toStartOf="@id/simpleChronometerPlotData"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/simpleChronometerPlotData"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Live-Data"
+            android:textColor="?attr/secondaryTextColor"
+            android:id="@+id/liveDataSwitchSleepBuddy"
+            android:checked="true"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

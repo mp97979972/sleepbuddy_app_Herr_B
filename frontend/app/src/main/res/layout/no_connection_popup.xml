@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noConnectionBox"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_rect_background_info_10"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/connectionNeededTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/please_connect_sleepbuddy"
+        android:textColor="?primaryTextColor"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/toConnectionTxtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toConnectionTxtView"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/drop_shadow_gradient_button"
+        android:text="@string/connect_sleepbuddy"
+        android:textColor="?buttonTextColor"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/connectionNeededTxtView"
+        app:layout_constraintStart_toStartOf="@id/connectionNeededTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/connectionNeededTxtView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

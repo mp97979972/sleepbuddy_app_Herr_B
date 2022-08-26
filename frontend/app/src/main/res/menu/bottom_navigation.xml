@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_connection"
+        android:icon="@drawable/nav_bar_bluetooth_disconnected"
+        android:title="@string/connection" />
+
+    <item
+        android:id="@+id/nav_live_measurement"
+        android:icon="@drawable/nav_bar_live_measurement"
+        android:title="@string/live_measurement"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/nav_bar_setting"
+        android:title="@string/settings"/>
+
+</menu>

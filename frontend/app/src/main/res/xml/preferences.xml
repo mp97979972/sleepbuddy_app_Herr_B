@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+
+        android:title="@string/user"
+        app:icon="@drawable/settings_user_icon">
+
+        <Preference
+            android:key="changeProfilePicture"
+            android:title="@string/change_profile_picture" />
+        <Preference
+            android:key="deleteProfilePicture"
+            android:title="@string/delete_profile_picture" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="App-Info"
+        app:icon="@drawable/settings_app_info_icon">
+        <Preference
+            android:key="appVersion"
+            android:summary=" "
+            android:title="App-Version" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

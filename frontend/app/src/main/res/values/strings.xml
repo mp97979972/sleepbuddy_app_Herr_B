@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Sleepbuddy</string>
+    <string name="date">Datum</string>
+    <string name="empty_placeholder">--</string>
+    <string name="connection_device">Connection / Device</string>
+    <string name="settings">Settings</string>
+    <string name="scan_bluetooth_device">Scan Bluetooth Devices</string>
+    <string name="connect_device">Connect Device</string>
+    <string name="choose_measurement">Choose measurement</string>
+    <string name="connection">Connection</string>
+    <string name="live_measurement">Live-measurement</string>
+    <string name="check_sensor">Check Sensor</string>
+    <string name="start">Start</string>
+    <string name="disconnect_device">Disconnect Device</string>
+    <string name="about_us">About Us</string>
+    <string name="change_profile_picture">Change profile picture</string>
+    <string name="please_connect_sleepbuddy">First connect your Sleepbuddy to the app, please.</string>
+    <string name="connect_sleepbuddy">Connect sleepbuddy</string>
+    <string name="establishing_connection">Establishing connection...</string>
+    <string name="user">User</string>
+    <string name="information_and_legal">Information and legal</string>
+    <string name="display">Display</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="dark_mode_is_activated">Dark mode is activated.</string>
+    #
+    <string name="light_mode_is_activated">Light mode is activated.</string>
+    #
+    <string name="disconnect_device_first">Disconnect your Sleepbuddy first, please.</string>
+    <string name="permission_needed">Bluetooth permission needed</string>
+    <string name="stop_measurement_first">stop measurement first, please.</string>
+    <string name="measurement"> measurement</string>
+    <string name="wait_for_stable_connection">Wait for a while for stable Connection</string>
+    <string name="date_time_format">hh:mm a</string>
+    <string name="date_time_format_24">HH:mm</string>
+    <string name="delete_profile_picture">Delete profile picture</string>
+    <string name="delete_profile_picture_question">Delete profile picture?</string>
+    <string name="profile_picture_not_deleted">Profile picture not deleted.</string>
+    <string name="profile_picture_deleted">Profile picture deleted.</string>
+    <string name="no_profile_picture_available">No profile picture available</string>
+    <string name="scan_firmware_versions">Scan firmware versions</string>
+    <string name="no_device_selected">no device selected.</string>
+    <string name="connect_to_device">Connect to Device</string>
+    <string name="name_spaces">"   name: "</string>
+    <string name="adress">"  adress: "</string>
+    <string name="please_stop_measurement_first">Stop measurement first, please.</string>
+    <string name="disconnect_device_toast">Disconnect to Device.</string>
+    <string name="start_and_reconnect">Please restart Sleepbuddy.</string>
+    <string name="you_can_start_measurement">You can start the measurement now.</string>
+    <string name="hrv">Hrv</string>
+    <string name="bpm">Bpm</string>
+    <string name="snoring">Snoring</string>
+    <string name="rr">RR</string>
+    <string name="position">Position</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

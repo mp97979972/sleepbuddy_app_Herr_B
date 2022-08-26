@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    tools:context=".fragments_activities.MainScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/headerGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/night_overview_card" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImgView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profil_img_dummy"
+        app:civ_border_width="2dp"
+        app:civ_border_color="?primaryColor"/>
+
+    <TextView
+        android:id="@+id/batteryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/profileImgView"
+        app:layout_constraintBottom_toTopOf="@id/sleepBuddyImgView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18dp"
+        android:textColor="?primaryTextColor"
+        />
+
+    <ImageView
+        android:id="@+id/sleepBuddyImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/sleepbuddy"
+        app:layout_constraintTop_toBottomOf="@id/batteryTextView"
+        app:layout_constraintBottom_toBottomOf="@id/profileImgView"
+        app:layout_constraintStart_toStartOf="@id/batteryTextView"
+        app:layout_constraintEnd_toEndOf="@id/batteryTextView"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?backgroundColor"
+        app:layout_constraintBottom_toTopOf="@id/footerGuideline"
+        app:layout_constraintTop_toBottomOf="@id/headerGuideline" >
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/headerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="118dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/footerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?backgroundColor"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemRippleColor="@null"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footerGuideline"
+        app:menu="@menu/bottom_navigation"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
